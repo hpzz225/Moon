@@ -58,7 +58,7 @@ export function GetInTouch() {
     };
 
     return (
-        <section className="bg-white flex py-20 ">
+        <section className="container mx-auto flex py-20 ">
             {/* <div className="container mx-auto flex px-[130px] "> */}
             <div className="w-full md:w-1/2 bg-[#8fd3d3] p-10 rounded-3xl">
                 <div className="bg-[#ee887a] rounded-3xl mx-auto w-1/2">

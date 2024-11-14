@@ -13,6 +13,8 @@ const authController = {
             return next(createError(400, 'User already exists'));
         }
     },
+
+    login: async (req, res, next) => {},
 };
 
 module.exports = authController;

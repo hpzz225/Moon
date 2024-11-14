@@ -61,7 +61,7 @@ const ServiceCard = ({ title, description, imageSrc }: Service) => (
 
 const IntroServices = () => {
     return (
-        <section className="bg-[#ffffff] py-4">
+        <section className="container mx-auto py-4">
             <ContentHeader title="Moon Có Gì ?" iconSrc="/images/symbol.png" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10">
                 {services.map((service, index) => (

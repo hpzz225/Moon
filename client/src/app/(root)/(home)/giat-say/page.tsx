@@ -4,7 +4,7 @@ import FeeDelivery from '@/components/_components-reuse/FreeDelivery';
 import Banner from '@/components/_components-reuse/Banner';
 import { PriceTable } from '@/components/_components-reuse/PriceTable';
 
-import ServiceIntro from '@/components/_components-reuse/IntroSection';
+import ServiceIntro from '@/components/_components-reuse/ServiceIntro';
 import ServiceProcess from '@/components/_components-reuse/ServiceProcess';
 
 import React from 'react';
@@ -37,8 +37,6 @@ const GiatSay = () => {
             note: [
                 '*Số Kg được cân sau khi đồ đã được giặt và sấy khô.',
                 '*Giặt sấy nhanh trong ngày : +10% phí dịch vụ',
-                '*Giặt sấy nhanh trong ngày : +10% phí dịch vụ',
-                ' Đây là một đoạn văn bản rất dài, nó sẽ bị cắt nếu vượt quá ba dòng. Đây là đoạn văn bản thử nghiệm để kiểm tra tính năng line-clamp trong Tailwind CSS, và nếu quá dài, phần còn lại sẽ bị ẩn đi và không hiển thị.',
             ],
         },
         {

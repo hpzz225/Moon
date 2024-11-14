@@ -1,6 +1,6 @@
 import ContactForm from '@/components/_components-reuse/ContactForm';
 
-import IntroService from '@/components/_components-reuse/IntroSection';
+import IntroService from '@/components/_components-reuse/ServiceIntro';
 import GetInTouch from '@/components/home-ui/LienHe/GetInTouch';
 import Maps from '@/components/home-ui/LienHe/Maps';
 
@@ -9,18 +9,18 @@ import React from 'react';
 const LienHe = () => {
     return (
         <>
-            <section className="container mx-auto px-4 md:px-8">
-                <IntroService
-                    title="LIÊN HỆ VỚI CHÚNG TÔI"
-                    description="Đội ngũ chuyên viên tư vấn Tiệm Giặt Nhà MOON luôn sẵn sàng hỗ trợ
+            {/* <section className="container mx-auto"> */}
+            <IntroService
+                title="LIÊN HỆ VỚI CHÚNG TÔI"
+                description="Đội ngũ chuyên viên tư vấn Tiệm Giặt Nhà MOON luôn sẵn sàng hỗ trợ
                             khách hàng để tìm được dịch vụ mong muốn."
-                    imageUrl="/images/lien-he.png"
-                    isImageFirst={false}
-                />
-                <GetInTouch />
-                <Maps />
-                <ContactForm />
-            </section>
+                imageUrl="/images/lien-he.png"
+                isImageFirst={false}
+            />
+            <GetInTouch />
+            <Maps />
+            <ContactForm />
+            {/* </section> */}
         </>
     );
 };

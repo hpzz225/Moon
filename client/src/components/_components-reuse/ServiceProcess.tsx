@@ -42,11 +42,11 @@ const steps: Step[] = [
 
 const ServiceProcess: React.FC = () => {
     return (
-        <section className="grid grid-cols-4 gap-10 mx-auto py-10">
+        <section className="container grid grid-cols-4 gap-10 mx-auto py-10">
             {steps.map((step, index) => (
                 <div
                     key={index}
-                    className="flex flex-col items-center  gap-10 bg-white rounded-lg shadow-lg "
+                    className="flex flex-col items-center gap-10 p-4 bg-white rounded-lg shadow-lg "
                 >
                     <div className="relative w-24 h-24">
                         <Image
@@ -56,7 +56,7 @@ const ServiceProcess: React.FC = () => {
                             className="object-cover rounded-full"
                         />
                     </div>
-                    <h3 className="text-[#1b8b8d] text-2xl font-bold uppercase">
+                    <h3 className="text-[#1b8b8d] text-2xl font-bold uppercase ">
                         {step.title}
                     </h3>
 

@@ -26,39 +26,61 @@ export const PriceTable: React.FC<PriceTableProps> = ({
     isImageFirst = false,
 }) => {
     return (
-        <>
+        <section className="container mx-auto">
             {layoutType === 'grid' ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
                     {items.map((item) => (
-                        <div key={item.title} className="text-center">
+                        <div
+                            key={item.title}
+                            className="text-center flex flex-col"
+                        >
                             <div className="relative w-full h-[300px]">
                                 <Image
                                     src={item.imageUrl}
                                     alt={item.title}
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </div>
-                            <div className="bg-white rounded-[20px] p-6 shadow-lg flex flex-col justify-between items-center">
-                                <h3 className="text-[#1b8b8d] text-2xl font-bold mb-2">
+                            <div className="bg-white rounded-[20px] p-6 shadow-lg flex flex-col justify-between items-center h-[600px]">
+                                <h3 className="text-[#1b8b8d] text-3xl font-bold mb-2">
                                     {item.title}
                                 </h3>
-                                <p className="text-[#22566e] text-lg font-medium mb-2">
-                                    {item.price}/{item.quantity}
-                                </p>
+                                <div className="flex flex-col">
+                                    <p className="text-center text-[#22566e] text-7xl font-extrabold">
+                                        {item.price}
+                                    </p>
+                                    <p className="text-right text-[#22566e] text-3xl font-normal">
+                                        /{item.quantity}
+                                    </p>
+                                </div>
                                 {item.headSubtitle && (
                                     <span className="text-[#ee887a] text-lg font-bold">
                                         {item.headSubtitle}
                                     </span>
                                 )}
                                 {item.subtitle && (
-                                    <p className="text-[#22566e] text-md font-normal">
+                                    <p className=" text-[#22566e] text-xl font-normal">
                                         {item.subtitle}
                                     </p>
                                 )}
-                                <button className="mt-4 px-4 py-2 bg-[#f3908a] rounded-lg text-white text-lg font-bold">
-                                    {item.buttonLabel}
+                                <button className="mt-4 px-6 py-4 bg-[#f3908a] rounded-lg">
+                                    <span className="text-white text-xl font-extrabold">
+                                        {item.buttonLabel}
+                                    </span>
                                 </button>
+                                {item.note && (
+                                    <div className="mt-4">
+                                        {item.note.map((note, index) => (
+                                            <p
+                                                key={index}
+                                                className="text-[#22566e] text-md font-normal line-clamp-2"
+                                            >
+                                                {note}
+                                            </p>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     ))}
@@ -124,6 +146,6 @@ export const PriceTable: React.FC<PriceTableProps> = ({
                     ))}
                 </div>
             )}
-        </>
+        </section>
     );
 };

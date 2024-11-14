@@ -23,7 +23,7 @@ const Navbar = () => {
 
     const isPriceActive = links.some((link) => link.href === pathname);
     return (
-        <nav className="bg-[#eaf3f7] py-4 ">
+        <nav className="bg-[#eaf3f7] ">
             <div className="container mx-auto flex justify-between items-center min-h-[100px]">
                 <Link href="/">
                     <Image

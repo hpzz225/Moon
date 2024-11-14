@@ -5,7 +5,7 @@ import { Mail } from 'lucide-react';
 const Footer = () => {
     return (
         <footer className="bg-[#EAF6F6] py-12">
-            <div className=" flex flex-col md:flex-row justify-center items-start gap-12 text-center md:text-left">
+            <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-12 text-center md:text-left">
                 <div className="w-[381px] mr-12">
                     <h3 className=" text-[25px] text-[#35A6A8] font-bold">
                         TIỆM GIẶT NHÀ MOON

@@ -4,7 +4,7 @@ import React from 'react';
 
 const Maps: React.FC = () => {
     return (
-        <div>
+        <section className="container mx-auto">
             <h2 className="text-[#35a5a7] text-4xl font-bold py-16 text-center">
                 XEM TRÊN BẢN ĐỒ
             </h2>
@@ -16,7 +16,7 @@ const Maps: React.FC = () => {
                 loading="lazy"
                 title="Map Location"
             />
-        </div>
+        </section>
     );
 };
 

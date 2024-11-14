@@ -4,7 +4,7 @@ import FeeDelivery from '@/components/_components-reuse/FreeDelivery';
 import Banner from '@/components/_components-reuse/Banner';
 import { PriceTable } from '@/components/_components-reuse/PriceTable';
 
-import ServiceIntro from '@/components/_components-reuse/IntroSection';
+import ServiceIntro from '@/components/_components-reuse/ServiceIntro';
 import ServiceProcess from '@/components/_components-reuse/ServiceProcess';
 
 import React from 'react';
@@ -54,7 +54,7 @@ const KhanRem = () => {
         },
     ];
     return (
-        <section className="bg-white">
+        <>
             <Banner imageUrl="/images/logo-giat-say-khan-rem.png" />
             <div className="container mx-auto ">
                 <ServiceIntro
@@ -79,7 +79,7 @@ const KhanRem = () => {
                 <FeeDelivery />
                 <ContactForm />
             </div>
-        </section>
+        </>
     );
 };
 

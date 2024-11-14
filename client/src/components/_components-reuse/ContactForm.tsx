@@ -60,7 +60,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="container mx-auto  py-16">
+        <section className="container mx-auto py-16">
             <div className="relative w-full  h-[450px] ">
                 <Image
                     src="/images/contactform.png"
