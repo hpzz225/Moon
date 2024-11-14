@@ -31,7 +31,7 @@ const FormSubmit: React.FC<FormSubmitProps> = ({
                     <Loader className="h-4 w-4 animate-spin" />
                     Đang gửi...
                 </span>
-            ) : (
+            ) : ( 
                 children || 'Gửi'
             )}
         </Button>
