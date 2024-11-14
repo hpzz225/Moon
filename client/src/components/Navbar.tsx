@@ -115,7 +115,7 @@ const Navbar = () => {
                     </div>
 
                     <Link
-                        href="/login"
+                        href="/sign-in"
                         className="flex justify-center login-btn ht_mirror w-40"
                     >
                         Đăng nhập
