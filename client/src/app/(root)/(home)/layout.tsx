@@ -10,7 +10,7 @@ export default function DefaultLayout({ children }: IAppProps) {
     return (
         <div className="flex flex-col h-screen">
             <Navbar />
-            <main className="flex-grow bg-white">{children}</main>
+                <main className="flex-grow bg-white">{children}</main>
             <Footer />
         </div>
     );
